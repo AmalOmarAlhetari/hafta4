@@ -1,0 +1,14 @@
+metin = "Paragraf, herhangi bir yazının bir satır başından öteki satır başına kadar olan bölümüne denir."
+kelime_listesi = metin.split()
+
+def uzunluklari_bul(kelimeler):
+    sonuc = []
+    for kelime in kelimeler:
+        uzunluk = len(kelime)
+        print(uzunluk)
+        sonuc.append(uzunluk)
+    return sonuc
+
+liste = uzunluklari_bul(kelime_listesi)
+
+print(liste)
